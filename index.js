@@ -16,7 +16,7 @@ const que = [];     //队列
 export default class BankBin {
     constructor(cardNo,options){
         //实例ID
-        let length = cardNo.length;
+        var length = cardNo.length;
         this.instanceId = Number(Math.random().toString().substr(3,length) + Date.now()).toString(36);
         this.cardNo = cardNo;
         this.options  = {
